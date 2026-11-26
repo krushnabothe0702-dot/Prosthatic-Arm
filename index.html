@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Photo documentation of a 3D-printed robotic hand prototype.">
+  <title>Robotic Hand Prototype</title>
+  <style>
+    :root { color-scheme: light; --ink:#17251f; --muted:#53645b; --paper:#f7f7f1; --card:#fff; --green:#1d684c; --line:#dce4da; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header { background:#153e31; color:#f7fff9; padding:clamp(3rem,8vw,6rem) max(1.25rem,calc((100% - 1080px)/2)); }
+    .eyebrow { color:#bde5c9; text-transform:uppercase; letter-spacing:.14em; font-size:.78rem; font-weight:700; }
+    h1 { max-width:780px; margin:.6rem 0 1rem; font-size:clamp(2.5rem,7vw,5rem); line-height:1.03; letter-spacing:-.045em; }
+    header p { max-width:680px; margin:0; color:#e0eee5; font-size:1.12rem; }
+    main { max-width:1080px; margin:auto; padding:2rem 1.25rem 4rem; }
+    section { padding:2rem 0; border-bottom:1px solid var(--line); }
+    h2 { font-size:1.7rem; line-height:1.2; margin:0 0 1rem; letter-spacing:-.025em; }
+    p { max-width:760px; }
+    .intro { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:1rem; margin-top:1.5rem; }
+    .fact { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1.1rem 1.2rem; }
+    .fact strong { display:block; color:var(--green); font-size:.8rem; text-transform:uppercase; letter-spacing:.08em; margin-bottom:.25rem; }
+    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr)); gap:1.25rem; }
+    figure { margin:0; background:var(--card); border:1px solid var(--line); border-radius:16px; overflow:hidden; }
+    figure img { display:block; width:100%; height:auto; background:#e9e6dc; }
+    figcaption { padding:1rem 1.1rem 1.2rem; color:var(--muted); }
+    figcaption strong { display:block; color:var(--ink); margin-bottom:.2rem; }
+    .note { border-left:4px solid #7cae83; padding:.3rem 1rem; color:var(--muted); background:#edf4eb; border-radius:0 10px 10px 0; }
+    footer { max-width:1080px; margin:auto; padding:0 1.25rem 2.5rem; color:var(--muted); font-size:.9rem; }
+    a { color:var(--green); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Project documentation · Prototype</div>
+    <h1>Robotic Hand</h1>
+    <p>A photo-based project page documenting a 3D-printed hand prototype, its visible parts, and the current build.</p>
+  </header>
+  <main>
+    <section aria-labelledby="overview">
+      <h2 id="overview">Project overview</h2>
+      <p>This prototype has a printed hand-shaped body with separate finger sections and a wider cuff or forearm attachment. Thin cords are routed through and around the fingers and palm. The photos capture the physical build from two angles.</p>
+      <div class="intro">
+        <div class="fact"><strong>Build</strong>3D-printed white plastic parts</div>
+        <div class="fact"><strong>Visible mechanism</strong>Articulated finger sections with routed cords</div>
+        <div class="fact"><strong>Documentation</strong>Two distinct photo views of the prototype</div>
+      </div>
+    </section>
+    <section aria-labelledby="features">
+      <h2 id="features">What is visible</h2>
+      <ul>
+        <li>A palm section with a repeated pattern of small openings.</li>
+        <li>Separate printed segments form the fingers and thumb.</li>
+        <li>Thin cords pass along the fingers and connect toward the hand and cuff.</li>
+        <li>A broad printed cuff-like piece extends from the wrist area.</li>
+      </ul>
+      <p class="note">These notes describe only what can be seen in the photos. The images do not show the control system, materials beyond the printed parts and cords, or whether the hand has been tested.</p>
+    </section>
+    <section aria-labelledby="gallery-title">
+      <h2 id="gallery-title">Build photos</h2>
+      <div class="gallery">
+        <figure>
+          <img src="images/hand-front-view.jpeg" alt="Front view of a white 3D-printed robotic hand prototype with cord routed through its fingers and palm" loading="lazy">
+          <figcaption><strong>Front and palm view</strong>The palm openings, finger segments, and cord routing are visible.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/hand-side-view.jpeg" alt="Angled view of the robotic hand prototype showing the cuff and cords running along the hand" loading="lazy">
+          <figcaption><strong>Angled side view</strong>This angle shows the cuff-like extension and cords running toward the fingers.</figcaption>
+        </figure>
+      </div>
+      <p class="note">The third supplied photo is an exact duplicate of the angled side view, so it is represented once here.</p>
+    </section>
+    <section aria-labelledby="next">
+      <h2 id="next">Next documentation steps</h2>
+      <p>Add details as the project develops: the design goal, parts and tools used, how the cords are connected, how the hand is controlled, and results from testing. Replace this note with verified build information.</p>
+    </section>
+  </main>
+  <footer>Robotic Hand Prototype · Photo documentation</footer>
+</body>
+</html>
